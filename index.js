@@ -32,6 +32,10 @@ function viewCart() {
 }
 
 function total() {
+  var result = 0
+  for (i = 0; i < cart.length; i++){
+    result += ${cart[i].itemPrice}
+  }
   // write your code here
 }
 
