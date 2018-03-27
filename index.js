@@ -22,7 +22,7 @@ function viewCart() {
   if (cart.length === 0){return "Your shopping cart is empty."}
   var result = "In your cart, you have"
   for (var i = 0; i < cart.length; i++){
-    var chunk = ` ${cart[i].itemName} at ${cart[i].itemPrice},`
+    var chunk = ` ${cart[i].itemName} at $${cart[i].itemPrice},`
     if (i === cart.length - 1 && cart.length > 1) { result += " and"}
     result += chunk
   }
