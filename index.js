@@ -26,7 +26,7 @@ function viewCart() {
     if (i === cart.length - 1) { result += " and"}
     result += chunk
   }
-  result[-1]='.'
+  result[result.length-1]='.'
   return result
 }
 
