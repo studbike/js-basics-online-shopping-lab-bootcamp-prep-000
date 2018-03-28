@@ -40,7 +40,7 @@ function total() {
 }
 
 function removeFromCart(item) {
-  for (i = 0; i < cart.length; i++)
+  for (var i = 0; i < cart.length; i++)
   if (indexOf(cart[i].itemName) >= 0){
     cart.splice(i, 1)
   }
