@@ -40,7 +40,11 @@ function total() {
 }
 
 function removeFromCart(item) {
-  
+  for (i = 0; i < cart.length; i++)
+  if (indexOf(cart[i].itemName) >= 0){
+    cart.splice(i, 1)
+  }
+  else {return "That item is not in your cart."}
   // write your code here
 }
 
